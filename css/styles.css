@@ -1,0 +1,146 @@
+:root
+{
+    font-size: 15px;
+}
+
+body
+{
+    background-attachment: fixed;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg);
+    background-position: -400px -400px, 150px 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.container
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: hsl(0, 0%, 59%);
+    font-family: "Kumbh Sans", arial, sans-serif;
+    font-weight: 400;
+    height: 412px;
+    min-width: 326px;    
+    position: relative;
+    text-align: center;
+}
+
+.card__header
+{
+    background-image: url(../assets/images/bg-pattern-card.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    height: 40%;
+}
+
+.card__figure
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 104px;
+    left: 111px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 110px;
+    width: 104px;
+}
+
+.card__photo
+{
+    border-radius: 50%;
+    display: block;
+    margin: 4px auto;
+    max-width: 100%;
+}
+
+.card__body
+{
+    box-sizing: border-box;
+    height: 40%;
+    padding-top: 20%;
+}
+
+.card__profile, .media__stats
+{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.card__profile-name, .card__profile-city, .media__info
+{
+    margin-top: 0;
+}
+
+.card__profile-name, .media__stats
+{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    
+    /* Dark cyan: hsl(185, 75%, 39%)
+    Very dark desaturated blue: hsl(229, 23%, 23%)
+    Dark grayish blue: hsl(227, 10%, 46%) */
+}
+
+.card__footer
+{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    box-sizing: border-box;
+    height: 20%;
+}
+
+.media
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.media__data
+{
+    width: 30%;
+}
+
+.media__info
+{
+    font-size: .8rem;
+}
+
+@media (min-width: 900px)
+{
+    body
+    {
+        background-position: -200px -300px, 500px 350px;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    body
+    {
+        background-position: -50px -300px, 600px 350px;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    body
+    {
+        background-position: 100px -300px, 700px 350px;
+        background-size: contain;
+    }
+}
