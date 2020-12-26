@@ -31,8 +31,8 @@ body
     color: hsl(0, 0%, 59%);
     font-family: "Kumbh Sans", arial, sans-serif;
     font-weight: 400;
-    height: 412px;
-    min-width: 326px;    
+    height: 375px;
+    min-width: 325px;    
     position: relative;
     text-align: center;
 }
@@ -43,7 +43,7 @@ body
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     box-sizing: border-box;
-    height: 40%;
+    height: 37%;
 }
 
 .card__figure
@@ -55,7 +55,7 @@ body
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 110px;
+    top: 87px;
     width: 104px;
 }
 
@@ -70,19 +70,25 @@ body
 .card__body
 {
     box-sizing: border-box;
-    height: 40%;
-    padding-top: 20%;
+    height: 39%;
+    padding-top: 18%;
 }
 
 .card__profile, .media__stats
 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
-.card__profile-name, .card__profile-city, .media__info
+.card__profile-name, .media__info
 {
     margin-top: 0;
+}
+
+.card__profile-city
+{
+    font-size: .9rem;
+    margin-top: 10px;
 }
 
 .card__profile-name, .media__stats
@@ -99,7 +105,8 @@ body
 {
     border-top: 1px solid hsl(0, 0%, 59%);
     box-sizing: border-box;
-    height: 20%;
+    height: 24%;
+    padding-top: 3%;
 }
 
 .media
@@ -115,7 +122,7 @@ body
 
 .media__info
 {
-    font-size: .8rem;
+    font-size: .75rem;
 }
 
 @media (min-width: 900px)
@@ -140,7 +147,7 @@ body
 {
     body
     {
-        background-position: 100px -300px, 700px 350px;
-        background-size: contain;
+        background-position: -280px -500px, 700px 360px;
+        background-size: auto;
     }
 }
